@@ -13,6 +13,9 @@ class Persona:
 		#La característica del objeto = nombre que le pasamos como parámetro
 		self.apellido = apellido
 		self.edad = edad
+		#No es necesario que venga como parámetro pero de todas formas todos los 
+		#objetos tendrán una lista
+		self.habilidades = []
 
 	def saludar(self):
 		print("{nombre} dice: ¡Hola!".format(nombre=self.nombre))
@@ -21,6 +24,10 @@ class Persona:
 	def saludar_a_otra_persona(self, otra_persona):
 		print("{nombre} saluda a {otro}".format(nombre=self.nombre,
 			otro=otra_persona.nombre))
+
+	def aprender(self, nueva_habilidad):
+		self.habilidades.append(nueva_habilidad)
+
 
 
 #Instancia de la clase Persona
@@ -35,6 +42,11 @@ aldo.saludar_a_otra_persona(rodrigo)
 #El valor de self lo ocupa aldo, y el valor de rodrigo lo ocupa otra_persona
 
 rodrigo.saludar_a_otra_persona(aldo)
+
+
+aldo.aprender("Dar clases")
+aldo.aprender("Bailar")
+print("Habilidades de Aldo: {habs}".format(habs=aldo.habilidades))
 
 
 
