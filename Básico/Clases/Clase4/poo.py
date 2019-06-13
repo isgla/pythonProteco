@@ -28,6 +28,13 @@ class Persona:
 	def aprender(self, nueva_habilidad):
 		self.habilidades.append(nueva_habilidad)
 
+	#Vamos a hacer un decorador que es equivalente a un método estático 
+	@classmethod
+	#Aquí el self toma el valor de la clase
+	def respirar(self):
+		print("Todas las personas respiramos")
+
+
 
 
 #Instancia de la clase Persona
@@ -48,6 +55,7 @@ aldo.aprender("Dar clases")
 aldo.aprender("Bailar")
 print("Habilidades de Aldo: {habs}".format(habs=aldo.habilidades))
 
+Persona.respirar()
 
 
 
