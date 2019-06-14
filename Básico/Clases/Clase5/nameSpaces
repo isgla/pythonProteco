@@ -1,0 +1,21 @@
+Espana38:Clase5 cur01alu38$ python3
+Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__']
+>>> help(__builtins__)
+
+>>> help(__name__)
+
+>>> __name__
+'__main__'
+>>> def funcion():
+...     print("hola")
+... 
+>>> dir(funcion)
+['__annotations__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+>>> funcion.__name__
+'funcion'
+>>> 
+

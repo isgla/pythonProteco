@@ -3,18 +3,18 @@
 Para interpretar los archivos:
     python3 "nombreArchivo.py"
 
-    BÁSICO
+BÁSICO:
     
     • Orientación a objetos:
     Todos son objetos en python.
     Type de función foo() => 
         Clase 4 (poo.py)
 
-    Objeto: Abstracción de un objeto de la vida real en la programación
+    Objeto: Abstracción de un objeto de la vida real en la programación.
     
     Tiene 4 pilares: abstracción, encapsulamiento, herencia, polimorfismo
         - Abstracción: Seleccionar qué características y métodos sirven para el problema a solucionar.
-            • Clase: Clase que genra los objetos. Los moldes. Upper Camel Case. (Empiezan con mayúsculas) y está en singular
+            • Clase: Clase que genera los objetos. Los moldes. Upper Camel Case. (Empiezan con mayúsculas) y está en singular
             • El constructor se escribe así:
                 def __init__(self):
                 
@@ -56,11 +56,66 @@ Para interpretar los archivos:
             •Multiherencia: Cuando quieres que herede de varias padres.
             PROBLEMAS: Problema de diamante; así que no es recomendable usarla.
                 class ComeAire(CrudiVegano, Fantasma):
+    
+    Módulos:
+        Tienen que estar en la misma carpeta
+        
+        Usar funciones de otro archivo de la siguientes maneras:
+        
+           • import modulo
+            resultado = modulo.areaCuadrado(lado)
+            
+           • from modulo import areaCirculo
+            print(areaCirculo(radio))
+            
+           • import modulo as mo
+            resultado = mo.areaCuadrado(lado)
+        
+        ERRORES COMUNES
+            Llamando el archivo igual que un módulo que ya existe
+            Ejemplo: math.py
+            
+            import math
+            print("La raiz cuadrada de 2 es: ", math.sqrt(2))
+            """
+            ERROR
+            Traceback (most recent call last):
+            File "math.py", line 1, in <module>
+            import math
+            File "/Users/cur01alu38/Desktop/pythonProteco/Básico/Clases/Clase5/math.py", line 3, in <module>
+            print("La raiz cuadrada de 2 es: ", math.sqrt(2))
+            AttributeError: module 'math' has no attribute 'sqrt'
+            """
+        
+        NAME SPACES
+            •Podemos acceder al atributo mediante name.
+            
+            Realizar ciertas acciones sólo si se está ejecutando el programa principal
+            if __name__ == '__main__':
+            
+            Ejemplo (nombres.py): 
+            sin: if __name__ == '__main__':
+                Hola estoy dentro del modulo
+                Hola soy Hannah
+                
+                
+                con: if __name__ == '__main__':
+                Hola soy Hannah
+            
+            •Para utilizar módulos externos en python:
+            Instalar Pip:
+                pip install nombre_paquete
+                
+
+        
+        Todos los objetos heredan de Object y por eso todos los objetos tienen el atributo de nombre.
+
+            
                 
             
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        REPASO
+        REPASO CURSO BÁSICO
             return termina una función
             break termina un ciclo
             
