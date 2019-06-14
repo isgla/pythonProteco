@@ -1,4 +1,4 @@
-class Alumno
+class Alumno:
 
 	
 	datos_de_alumons = []

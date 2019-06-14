@@ -1,0 +1,12 @@
+Ejercicio:
+
+1.- Lista de objetos de la clase Alumno
+2.- Alumno tendrá:
+		- Nombre
+		- Apellidos
+		- Cuenta o matrícula
+		- Nombre de las Materias (5)
+		- Calificaciones (5)
+		- Promedio
+3.- Se debe poder ingresar todos los datos a través de la terminal
+	hasta que el usuario escriba: "Salir"

@@ -3,6 +3,8 @@
 Para interpretar los archivos:
     python3 "nombreArchivo.py"
 
+    BÁSICO
+    
     • Orientación a objetos:
     Todos son objetos en python.
     Type de función foo() => 
@@ -22,6 +24,7 @@ Para interpretar los archivos:
                 Self es la referencia del objeto
                 
                 self.nombre = nombre
+                Hace referencia al parámetro = lo renombras
                 La característica del objeto = nombre que le pasamos como parámetro
                 
                 Instancia de las clases:
@@ -36,7 +39,25 @@ Para interpretar los archivos:
             •Los getters y setters te permite acceder o poner un valor privado. 
                 Sirven para tener una capa extra de seguridad
         - Herencia:
+            •Si una clase hereda de otra se escribe como: (Vegetariano hereda de persona)
+                class Vegetariano(Persona):
+                
+            •Herencia de varias clases; Persona -> Vegetariano -> Vegano
+                Se pueden sobreescribir los métodos
+                
+            •super representa una instancia de la clase padre
+            Para sobreescribir el constructor de la clase hija- le agrego dos atributos y hago super
+            para con los atributos de las clase padre y después pongo sus dos nuevos parámetros.
+            
+            
         - Polimorfismo:
+            •(Varias formas) Cuando una clase hija hereda de una padre y después hereda a otra,
+            tiene varios comportamientos (como padre e hijo)
+            •Multiherencia: Cuando quieres que herede de varias padres.
+            PROBLEMAS: Problema de diamante; así que no es recomendable usarla.
+                class ComeAire(CrudiVegano, Fantasma):
+                
+            
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO
@@ -46,5 +67,9 @@ Para interpretar los archivos:
             self NO es una palabra reservada
             
             Las clases se escriben class Clase_Uno
+            
+            Dif (Función y método) El método va asociado a una clase y la función
+            no necesariamente. El método tiene un objeto asociaado. Los métodos llevan self
+            en el parámetro y las funciones no.
         
     
