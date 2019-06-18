@@ -1,2 +1,4 @@
-Leche: 34
-Huevos: 40
+Leche: 27
+Huevos: 48
+Yogurt: 58
+Queso: 38
