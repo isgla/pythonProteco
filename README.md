@@ -111,7 +111,27 @@ BÁSICO:
         Todos los objetos heredan de Object y por eso todos los objetos tienen el atributo de nombre.
 
             
-                
+INTERMEDIO:                
+    
+    archivo = open("mi_archivo.txt","a")
+    #La a es de append, para que empiece a escribir de donde se quedó el archivo
+    
+    archivo_json = open("clase.json", "r")
+    #La r es de read
+    
+    json.dump() Convertir diccionarios a json
+    json.load() Convertir json a diccionarios
+    
+    EJEMPLO: serialización.py
+    csv: valores separados por comas
+        - Writer es el método que primero convierte en lista y te permite ir agregando rows, append a la lista. 
+        - Reader es el método que tiene el csv para convertir un archivo en una lista
+            
+    json: son como los diccionarios de los archivos
+    
+    • Serialización: Estándar para manejar formatos. Por ejemplo, para manejar json o csv.
+    Converti,os los json o los csv en formatos que podamos manejar fácilmente. 
+    En este caso en listas.
             
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
