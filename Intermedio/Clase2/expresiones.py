@@ -102,7 +102,7 @@ if re.match("cadena[0-9]", "cadena1s"):
 \d -> Equivale [0-9]
 \D -> Equivale [^0-9]
 \w -> Equivale [a-zA-Z_] incluir el caracter _ también
-\W -> Equivale [^a-zA-Z_] lo mismo pero negado
+\W -> Equivale [^a-zA-Z_] lo mismo pero negado, o sea del 0-9
 '''
 
 #Crear una expresión regular para verificar correos
