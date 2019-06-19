@@ -132,7 +132,20 @@ INTERMEDIO:
     • Serialización: Estándar para manejar formatos. Por ejemplo, para manejar json o csv.
     Converti,os los json o los csv en formatos que podamos manejar fácilmente. 
     En este caso en listas.
-            
+    
+    •Expresiones regulares
+        Secuencia especial de caracteres que ayuda aencontrar otras cadenas o 
+        conjuntos de cadenas utilizando una sintáxis mantenida en un patrón.
+    
+    match() Busca al inicio de la cadena
+    search() Busca en toda la cadena
+    
+    •Redes:
+        Cada computadora tiene una dirección IP.
+        
+        Puertos: Salida-Entrada 
+            1 ~ 2^(32)
+            Sockets comunes: 5000, 3000, 8000, 5555, 3333, 8888
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO CURSO BÁSICO
@@ -146,5 +159,33 @@ INTERMEDIO:
             Dif (Función y método) El método va asociado a una clase y la función
             no necesariamente. El método tiene un objeto asociaado. Los métodos llevan self
             en el parámetro y las funciones no.
+        
+        En finally se encuentra el código que debe ejecutarse siempre, pase lo que pase.
+        
+        TypeError es cuando tratas de sumar una cadena 
+        
+        raise: forzar a que una excepción se lance
+        
+        Las excepciones ejecutan código en caso de haber caído ya en un error
+        
+        Módulo os nos otorga funcionalidad para conectar el sistema operativo
+        
+        Módulo sys: Conocer información de nuestro ejecutable
+        
+        Leer el zen de python es con this
+        
+        sys.path Regresa la lista de carpetas donde están los módulos importables
+        
+        Para crear una carpeta: os.mkdir("nombre")
+        
+        Codename del sistema operativo de mac: Darwin
+        
+        Modos de apertura de archivos: r,w,a
+        
+        csv.writerow()
+        
+        
+        
+        
         
     
