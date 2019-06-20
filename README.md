@@ -146,6 +146,42 @@ INTERMEDIO:
         Puertos: Salida-Entrada 
             1 ~ 2^(32)
             Sockets comunes: 5000, 3000, 8000, 5555, 3333, 8888
+    
+    •BASE DE DATOS
+        -Entidades: Cualquier objeto o conceptosobre el que se recoge información.
+        Se representan con rectángulos.
+            Fuertes: No dependen de otra para exisitir.
+            Débiles: Dependen de otra para existir.
+                Personas pueden existir sin brazos pero los brazos no sin la persona.
+        -Atributos: Características de las entidades.
+        -Relación: Correspondencia entre dos o más entidades.
+        Se representa con rombos
+            Cardinalidad: Número de correspondencias.
+                1:N
+            Reglas de negocio.
+            MODELOS:
+                -Peter Chen: 
+                    •Refleja tan sólo la existencia de los datos.
+                    •Independiente del sistema Gestor de Base de Datos.
+                    -Relacional: Sirve para cualquier tipo de SGBD
+                    -Modelo físico: Tablas
+                    - Funciones básicas de una base de datos: CRUD Create, read, update, delete
+                
+        •CONCURRENCIA
+            -Thread (Hilo): Ruta de ejecución independiente.
+        
+            -Proceso: Programa en ejecución, puede incluir múltiples threads.
+        
+            -Tarea: Se refiere al concepto abstracto de una actividad que necesita ser ejecutada.
+            
+            -Paralelismo: Ejecución de una tarea al mismo tiempo (HW). Ejecución de tareas al mismo tiempo. (HW -> Hardware es lo que requiere).
+        
+            -Concurrencia: Múltiples flujos de control que pueden o no ejecutarse paralelamente. Es la capacidad que tiene una tarea (o más tareas) de poderse ejecutar de manera independiente de otra tarea
+        
+                    
+                    
+            
+        
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO CURSO BÁSICO

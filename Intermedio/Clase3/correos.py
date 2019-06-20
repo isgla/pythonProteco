@@ -36,7 +36,7 @@ if __name__ == "__main__":
 	asunto = input("Escriba el asunto: ")
 	cuerpo = input("Escriba su mensaje: ")
 
-	for x in range (1,4):
+	for x in range (1,11):
 		enviar_correo(usuario, password, destinatario, asunto, cuerpo)
 
 	
