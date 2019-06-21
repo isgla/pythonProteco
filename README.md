@@ -199,6 +199,8 @@ INTERMEDIO:
             no necesariamente. El método tiene un objeto asociaado. Los métodos llevan self
             en el parámetro y las funciones no.
         
+        
+        REPASO CURSO INTERMEDIO
         En finally se encuentra el código que debe ejecutarse siempre, pase lo que pase.
         
         TypeError es cuando tratas de sumar una cadena 
