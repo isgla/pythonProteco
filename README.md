@@ -201,33 +201,33 @@ INTERMEDIO:
         
         
         REPASO CURSO INTERMEDIO
-        En finally se encuentra el código que debe ejecutarse siempre, pase lo que pase.
-        
-        TypeError es cuando tratas de sumar una cadena 
-        
-        raise: forzar a que una excepción se lance
-        
-        Las excepciones ejecutan código en caso de haber caído ya en un error
-        
-        Módulo os nos otorga funcionalidad para conectar el sistema operativo
-        
-        Módulo sys: Conocer información de nuestro ejecutable
-        
-        Leer el zen de python es con this
-        
-        sys.path Regresa la lista de carpetas donde están los módulos importables
-        
-        Para crear una carpeta: os.mkdir("nombre")
-        
-        Codename del sistema operativo de mac: Darwin
-        
-        Modos de apertura de archivos: r,w,a
-        
-        csv.writerow()
-        
-        KeyboardInterruption error es con Crtl+C
-        
-        os.system
+            En finally se encuentra el código que debe ejecutarse siempre, pase lo que pase.
+            
+            TypeError es cuando tratas de sumar una cadena 
+            
+            raise: forzar a que una excepción se lance
+            
+            Las excepciones ejecutan código en caso de haber caído ya en un error
+            
+            Módulo os nos otorga funcionalidad para conectar el sistema operativo
+            
+            Módulo sys: Conocer información de nuestro ejecutable
+            
+            Leer el zen de python es con this
+            
+            sys.path Regresa la lista de carpetas donde están los módulos importables
+            
+            Para crear una carpeta: os.mkdir("nombre")
+            
+            Codename del sistema operativo de mac: Darwin
+            
+            Modos de apertura de archivos: r,w,a
+            
+            csv.writerow()
+            
+            KeyboardInterruption error es con Crtl+C
+            
+            os.system
         
         
         
