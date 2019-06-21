@@ -177,6 +177,9 @@ INTERMEDIO:
             -Paralelismo: Ejecución de una tarea al mismo tiempo (HW). Ejecución de tareas al mismo tiempo. (HW -> Hardware es lo que requiere).
         
             -Concurrencia: Múltiples flujos de control que pueden o no ejecutarse paralelamente. Es la capacidad que tiene una tarea (o más tareas) de poderse ejecutar de manera independiente de otra tarea
+            
+            •Socket: Es como una computadora, hay un servidor-clientes, recibe información.
+            Se compartan como hilos.
         
                     
                     
@@ -219,6 +222,10 @@ INTERMEDIO:
         Modos de apertura de archivos: r,w,a
         
         csv.writerow()
+        
+        KeyboardInterruption error es con Crtl+C
+        
+        os.system
         
         
         
