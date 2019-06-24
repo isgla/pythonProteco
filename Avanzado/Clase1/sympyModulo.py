@@ -43,8 +43,29 @@ sol_par = ecuacion.subs(x,3)
 print(sol_par)
 #y + 3
 
+#Sustituyendo otros símbolos
+sol = ecuacion.subs(x,y)
+print(sol)
 
+#Múltiples sustituciones
+p = Symbol('p')
+ecuacion2 = x*2 + 5*y - p
+print(ecuacion2)
+aux = ecuacion2.subs([(x,1),(y,5),(p,x)])
+print(aux)
 
+#Solución de ecuaciones
+e = (x**2) - 5*y
+print(solve(e))
+
+#Cálculo de límites
+#función, variable respecto a ..., valor al que tiende
+print(limit(cos(x)/ x, x, 0))
+print(limit(sin(x)/ x, x, 0))
+
+#Calculando integral
+#Función, (variable respecto a, límite superior, límite inferior)
+print(integrate(x**3,(x,-1,1)))
 
 """
 #Forzar tipos de datos

@@ -252,7 +252,7 @@ INTERMEDIO:
             •Matriz transpuesta, Hermitiana (Conjugado de los complejos), Inversa
             
             
-            Sympy (Clase1: sympyModulo.py):
+            Sympy (Clase1: sympyModulo.py) Cálculo simbólico:
             
                 #Forzar tipos de datos (Casteos)
                 
