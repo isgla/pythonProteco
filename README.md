@@ -180,10 +180,83 @@ INTERMEDIO:
             
             •Socket: Es como una computadora, hay un servidor-clientes, recibe información.
             Se compartan como hilos.
-        
-                    
-                    
+ 
+ AVANZADO
             
+            Numpy (Clase1: numpyModulo.py):
+            
+            vector = np.array([2,3,4,5])
+            vector2 = np.array([6,7,8,9])
+                
+            •Permite hacer suma de vectores.
+                suma = vector + vector2
+                
+            •Permite hacer producto punto
+                productoPunto = vector.dot(vector2)
+            
+            •Creando matrices con el método array
+                m2 = np.array([[1],[2],[3]])
+                
+                    Matriz 3x1
+                    [[1]
+                    [2]
+                    [3]]
+            
+            
+            •Multiplicación de matrices usando array y método dot
+            
+                    m1 = np.array([[1,2,3],[4,5,6],[7,8,9]])
+                    m2 = np.array([[1],[2],[3]])
+                    
+                    m1.dot(m2)
+            
+            •Array con un rango de valores
+                arr1 = np.arange(10)
+                #Imprime [0 1 2 3 4 5 6 7 8 9]
+                
+                arr2 = np.arange(2,20)
+                #Imprime [ 2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19]
+                
+                arr3 = np.arange(4,20,3)
+                #Imprime [ 4  7 10 13 16 19]
+                
+            •Arreglos especiales
+                unos = np.ones((2,2)) #Le pasas como parámetro una tupla para definir la dimensión
+                    #Imprime: 
+                    [[1. 1.]
+                    [1. 1.]]
+                    
+                ceros = np.zeros((3,5))
+                    #Imprime: 
+                    [[0. 0. 0. 0. 0.]
+                    [0. 0. 0. 0. 0.]
+                    [0. 0. 0. 0. 0.]]
+                
+                #Del 0 al 3 en 9 puntos
+                lins = np.linspace(0,3,9)
+                    #Imprime 
+                    [0.    0.375 0.75  1.125 1.5   1.875 2.25  2.625 3.   ]
+                    
+                #Imprimiría cuartos
+                    lins = np.linspace(0,1,6)
+                    print(lins)
+                    #[0.  0.2 0.4 0.6 0.8 1. ]
+            •Matriz diagonal
+                diagonal = np.eye(3)
+                print(diagonal)
+                    #Imprime:
+                    [[1. 0. 0.]
+                    [0. 1. 0.]
+                    [0. 0. 1.]]
+            
+            •Matriz transpuesta, Hermitiana (Conjugado de los complejos), Inversa
+            
+            
+            Sympy (Clase1: sympyModulo.py):
+            
+                #Forzar tipos de datos (Casteos)
+                
+                Números racionales, infinitos (zoo = complex infinity))
         
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
