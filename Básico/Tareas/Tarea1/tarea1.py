@@ -43,6 +43,12 @@ def numNoMult(listaNumDobles):
 ejemplo = [1, 1, 3, 3, 4, 5, 5, 6, 6, 7, 7]
 numNoMult(ejemplo)
 
+'''
+ if n == listaNumDobles[listaNumDobles.index(n)+1]:
+IndexError: list index out of range
+'''
+#ejemplo2 = [1, 1, 3, 3, 4, 4, 5, 5, 6, 6, 7]
+#numNoMult(ejemplo2)
 
 print("-"*50)
 #3
