@@ -258,7 +258,51 @@ INTERMEDIO:
                 
                 Números racionales, infinitos (zoo = complex infinity))
         
+        
+        Machine Learning: Es una herramiento de A.I. 
+        Tiene limitantes porque no aprende de errores.
+        
+        Se basa en aprender para tomar decisiones.
+        Hay tres tipos:
+        •Aprendizaje supervisado: Vamos a tener ciertas características asociadas con una etiqueta. Ejemplo: Una flor tiene varias características, y dependendo de esas, podemos asignarle una etiqueta.
+            -Árboles de decicón: Estructura de datos para establecer un conjunto de reglas de decisión. Sklearn
+            
+                Conjunto de entrenamiento
+                
+                Conjunto de prueba
+        •Aprendizaje no supervisado
+                
+        •Aprendizaje refuerzo
 
+            
+            -Redes neuronales.
+            Perceptrón: neurona artificial (Entrada y peso) 
+                Los pesos se asignan solos
+                Bias: Umbral que permite tener un resultado siempre
+                Tendríamos una función de activación; hay varias, entre ellas Sigmoide(hay variaciones de 0-1)
+                
+                Cálculo de errores:
+                
+                δ = D -Y
+                D -> Valor deseado
+                Y -> Valor obtenido
+                w-> Peso
+                
+                Δ1 = n * δ * x1
+                Δ2 = n * δ * x2
+                w1 = w1 + Δ1
+                w2 = w2 + Δ2
+                b = b-n*δ (Recta)
+                
+            
+            Modelo matemático
+            
+            TensorFlow
+            big head (air b&b)
+            
+            IBM: computacion cuantica; Watson
+        
+       
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO CURSO BÁSICO
             return termina una función

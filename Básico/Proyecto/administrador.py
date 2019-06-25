@@ -6,67 +6,7 @@ from vuelo import *
 adm = "ro"
 contra = "1"
 
-def modifica_vuelo(v):
-    flag = True
-    while flag:
-        mod_vuelo = """
-            -----Modificar vuelo-----
-            1. Destino
-            2. Hora Salida
-            3. Hora Llegada
-            4. Costo clase Turista
-            5. Costo clase Negocios
-            6. Costo Primera Clase
-            7. Lugares clase Turista
-            8. Lugares clase Negocios
-            9. Lugares Primera Clase
-            10. Fecha salida
-            11. Regresar
-            """
-        print(mod_vuelo)
-        opcm = int(input("Ingrese la opción: "))
-        if opcm == 1:
-            x = input("Ingrese el nuevo destino del vuelo: ")
-            v.set_destino(x)
-            continue
-        elif opcm == 2:
-            x = input("Ingrese la nueva hora de salida del vuelo: ")
-            v.set_sal(x)
-            continue
-        elif opcm == 3:
-            x = input("Ingrese la nueva hora de llegada del vuelo: ")
-            v.set_lleg(x)
-            continue
-        elif opcm == 4:
-            x = int(input("Ingrese el nuevo costo clase Turista: "))
-            v.set_tur(x)
-            continue
-        elif opcm == 5:
-            x = int(input("Ingrese el nuevo costo clase Negocios: "))
-            v.set_neg(x)
-            continue
-        elif opcm == 6:
-            x = int(input("Ingrese el nuevo costo de primera clase:  "))
-            v.set_prim(x)
-            continue
-        elif opcm == 7:
-            x = int(input("Ingrese el nuevo número de lugares en la clase turista: "))
-            v.set_l_tur(x)
-            continue
-        elif opcm == 8:
-            x = int(input("Ingrese el nuevo número de lugares en la clase de negocios: "))
-            v.set_l_neg(x)
-            continue
-        elif opcm == 9:
-            x = int(input("Ingrese el nuevo número de lugares en primera clase: "))
-            v.set_l_prim(x)
-            continue
-        elif opcm == 10:
-            x = input("Ingrese la nueva fecha de salida: ")
-            v.set_f_sal(x)
-            continue
-        elif opcm == 11:
-            admin_func()
+
 
 def admin_func():
     flag = True
