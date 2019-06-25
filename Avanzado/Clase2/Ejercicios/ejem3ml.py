@@ -20,7 +20,7 @@ prueba_target = iris.target[0]
 prueba_data = iris.data[0]
 
 #De que conjunto vas a borras y cuales osn los indices del conjunto que vas a borrar
-#
+#Target - lo que quiero obtener
 target = numpy.delete(iris.target,[0,50,100])
 data = numpy.delete(iris.data, [0,50,100], axis=0)
 
