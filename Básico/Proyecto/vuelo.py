@@ -26,3 +26,36 @@ class Vuelo:
         """.format(self.dest, self.sal, self.lleg, self.tur, self.neg, self.prim, self.l_tur, self.l_neg, self.l_prim, self.f_sal)
         return s
 
+    def set_destino(self, dest):
+        self.dest = dest
+
+    def set_sal(self, sal):
+        self.sal = sal
+
+    def set_lleg(self, lleg):
+        self.lleg = lleg
+
+    def set_tur(self, tur):
+        self.tur = tur
+
+    def set_neg(self, neg):
+        self.neg = neg
+
+    def set_prim(self, prim):
+        self.prim = prim
+
+    def set_l_tur(self, l_tur):
+        self.l_tur = l_tur
+    
+    def set_l_neg(self, l_neg):
+        self.l_neg = l_neg
+
+    def set_l_prim(self, l_prim):
+        self.l_prim = l_prim
+
+    def set_f_sal(self, f_sal):
+        self.f_sal = f_sal
+
+
+
+

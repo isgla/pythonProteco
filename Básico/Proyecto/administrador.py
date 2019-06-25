@@ -3,8 +3,70 @@ import getpass
 import vuelo
 from vuelo import *
 
-adm = "Rodrigo"
-contra = "abc123!"
+adm = "ro"
+contra = "1"
+
+def modifica_vuelo(v):
+    flag = True
+    while flag:
+        mod_vuelo = """
+            -----Modificar vuelo-----
+            1. Destino
+            2. Hora Salida
+            3. Hora Llegada
+            4. Costo clase Turista
+            5. Costo clase Negocios
+            6. Costo Primera Clase
+            7. Lugares clase Turista
+            8. Lugares clase Negocios
+            9. Lugares Primera Clase
+            10. Fecha salida
+            11. Regresar
+            """
+        print(mod_vuelo)
+        opcm = int(input("Ingrese la opción: "))
+        if opcm == 1:
+            x = input("Ingrese el nuevo destino del vuelo: ")
+            v.set_destino(x)
+            continue
+        elif opcm == 2:
+            x = input("Ingrese la nueva hora de salida del vuelo: ")
+            v.set_sal(x)
+            continue
+        elif opcm == 3:
+            x = input("Ingrese la nueva hora de llegada del vuelo: ")
+            v.set_lleg(x)
+            continue
+        elif opcm == 4:
+            x = int(input("Ingrese el nuevo costo clase Turista: "))
+            v.set_tur(x)
+            continue
+        elif opcm == 5:
+            x = int(input("Ingrese el nuevo costo clase Negocios: "))
+            v.set_neg(x)
+            continue
+        elif opcm == 6:
+            x = int(input("Ingrese el nuevo costo de primera clase:  "))
+            v.set_prim(x)
+            continue
+        elif opcm == 7:
+            x = int(input("Ingrese el nuevo número de lugares en la clase turista: "))
+            v.set_l_tur(x)
+            continue
+        elif opcm == 8:
+            x = int(input("Ingrese el nuevo número de lugares en la clase de negocios: "))
+            v.set_l_neg(x)
+            continue
+        elif opcm == 9:
+            x = int(input("Ingrese el nuevo número de lugares en primera clase: "))
+            v.set_l_prim(x)
+            continue
+        elif opcm == 10:
+            x = input("Ingrese la nueva fecha de salida: ")
+            v.set_f_sal(x)
+            continue
+        elif opcm == 11:
+            admin_func()
 
 def admin_func():
     flag = True
@@ -27,12 +89,12 @@ def admin_func():
             max_vuelos = int(input("Ingrese el número máximo de vuelos que el aeropuerto tendrá disponible para dar de alta en el sistema: "))
             continue
 
-        if opc == 2:
+        elif opc == 2:
             vuelos = []
             num_vuelos = int(input("¿Cuántos vuelos desea agregar?: "))
             if num_vuelos<= max_vuelos:
                 for i in range(num_vuelos):
-                    dest = input("Ingrese el destino del vuelo: ")
+                    dest = input("\nIngrese el destino del vuelo: ")
                     sal = input("Ingrese la hora de salida: ")
                     lleg = input("Ingrese la hora de llegada: ")
                     tur = int(input("Ingrese el costo del viaje de turista: "))
@@ -49,20 +111,20 @@ def admin_func():
             else:
                 print("Debe ingresar un número menor a la que ingresó como mayor cantidad de vuelos.")
 
-        if opc == 3:
+        elif opc == 3:
             i = 1
             for vuelo in vuelos:
                 print("Vuelo no.: " + str(i))
                 print(str(vuelo))
                 i += 1
 
-        if opc == 4:
+        elif opc == 4:
             
             for vuelo in vuelos:
                 print("-"*15)
                 print(vuelo.dest)
             
-            elim = input("¿Cuál es el destino del vuelo que quiere eliminar?: ")
+            elim = input("\n¿Cuál es el destino del vuelo que quiere eliminar?: ")
 
             for vuelo in vuelos:
                 if elim == vuelo.dest:
@@ -71,15 +133,28 @@ def admin_func():
                     print("No se encontró ningún vuelo con ese destino.")
                     continue
 
-        if opc == 5:
+        elif opc == 5:
+            for vuelo in vuelos:
+                print("-"*15)
+                print(vuelo.dest)
+
+            m = input("¿Cuál es el destino del vuelo que quiere modificar?: ")
+
+            for v in vuelos:
+                if m == vuelo.dest:
+                    v.modifica_vuelo()
+                    continue
+                else:
+                    print("No se encontró ningún vuelo con ese destino.")
+                    continue
+
+        elif opc == 6:
             pass
-        if opc == 6:
+        elif opc == 7:
             pass
-        if opc == 7:
+        elif opc == 8:
             pass
-        if opc == 8:
-            pass
-        if opc == 9:
+        elif opc == 9:
             m_admin()
         
 
@@ -106,7 +181,7 @@ def m_admin():
             else:
                 admin_func()
 
-        if opc == 2:
+        elif opc == 2:
             import proyecto as pr
             pr.menu_princ()
             break
