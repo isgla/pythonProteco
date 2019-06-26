@@ -301,6 +301,32 @@ INTERMEDIO:
             big head (air b&b)
             
             IBM: computacion cuantica; Watson
+            
+            
+            PASOS PARA CREAR UN BOT EN TELEGRAM
+                Cd Desktop 
+                pip3 install pyTelegramBotAPI —user
+                
+                Bot father (buscar)
+                /newbot 
+                Name: hannahgl 
+                Bot: hannahgl_bot
+                Dar click en el link
+                Start
+                
+                Copiar el token 
+                Link rojo 
+                
+                Haces el programa en Python 
+                Lo corres 
+                Desde la web escríbele un mensaje a tu bot 
+                Y ve tu terminal
+                
+                (Cambios en el programa)
+                Escribes otro mensaje en el chat con tu bot 
+                Y te imprimes el id y el mensaje
+                
+                Puedes mandarte un mensaje pidiendo el nombre del archivo y te lo manda si los nombres coinciden.
         
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
