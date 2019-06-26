@@ -1,6 +1,6 @@
 import telebot
-
-token = '662482108:AAE8zi4Ed22Ty7pykjiAZHZIMoq04yx8DyI'
+#Insert token there
+token = ''
 
 miBot = telebot.TeleBot(token)
 
@@ -9,7 +9,8 @@ miBot = telebot.TeleBot(token)
 def send_welcome(message):
 	miBot.reply_to(message, "Hola, soy tu bot de Python")
 
-chat_id = 886078749
+#Insert chat_id there
+chat_id = #########
 miBot.send_message(chat_id, "Hola :D")
 
 #Mandar fotos

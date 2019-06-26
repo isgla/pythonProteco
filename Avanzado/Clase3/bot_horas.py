@@ -2,11 +2,13 @@ import telebot
 from telebot import types
 import time
 
-token = '662482108:AAE8zi4Ed22Ty7pykjiAZHZIMoq04yx8DyI'
+#Insert token there
+token = ''
 
 miBot = telebot.TeleBot(token)
 
-chat_id = 886078749
+#Insert chat_id there
+chat_id = #########
 
 """
 while True:

@@ -328,6 +328,8 @@ INTERMEDIO:
                 
                 Puedes mandarte un mensaje pidiendo el nombre del archivo y te lo manda si los nombres coinciden.
         
+        
+        http: hyper text transfer protocol
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO CURSO BÁSICO
