@@ -330,6 +330,74 @@ INTERMEDIO:
         
         
         http: hyper text transfer protocol
+            Tiene su propio CRUD 
+            Create: POST # No lleva los parámetros expuestos en la url
+                Read: GET #Lleva los parámetros expuestos en la url
+                Update: PATCH/PUT
+                Delete: DELETE
+                
+        https = http + TLS (Transfer Layer Security), agrega una capa más de seguridad
+        
+        backend: esqueleto de una aplicación
+        
+        
+        A esta arquitectura se le conoce como MVC (Modelo - base de datos, vista - FrontEnd, controlador - Servidor)
+        frontend: con lo que esl usuario interactua  -> Conectado a un servidor -> Conectado a una base de datos
+        
+        Al servidor también se le conoce como API: Application Programming Interface
+            Se leen puros json y el frontend te lo "hace bonito"
+            Usamos en clase la API de Telegram
+            
+            En Java, SDK, Software Development Kit (Conjunto de herramienntas que nos hace más fácil leer la API)
+            Vamos a hacerlo por requests. El servidor hace un request y la base de datos nos genera una respuesta (respond) y tiene forma de json
+            
+            Token: Evitan que los programadores hagan juegos maliciosos y se usan en APIs muy productivas como Twitter, Google, etc
+            
+            Request -> Response 
+            
+            En Python hay una biblioteca que se llama requests que facilita esto, y no tienes que hacer un socket
+            
+            Status code 
+            #<Response [200]> 
+            # Todos los 200 son éxito, 300 errores de autorización, 
+            # 400 Error de la petición (bad request), 500 error de servidor
+            
+            
+            
+            Pasos para api google
+            
+            1. console.cloud.google.com
+            
+            APIs y servicios
+                Creas un proyecto
+                    Le pones un nombre 
+                        Crear
+            
+            APIs y servicios
+            Panel
+            Habilitar API
+            Geocoding API habilitar
+            
+            
+            Una vez creado el proyecto
+            APIs y servicios
+                Seleccionas Credenciales
+                    Seleccionas el proyecto
+                        Crear credenciales
+                            Clave de API: AIzaSyCm7EOhD3CRE9LriglkQr0Ny8d5-OgtfTI
+                            
+
+            
+            
+            2. https://developers.google.com
+                Busca productos y documentación
+                    Google Maps platform
+                        https://developers.google.com/maps/documentation/
+                            Documentacion
+                                API Geocoding
+                                    https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
+                                        Insertar el token ya generaste
+        
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO CURSO BÁSICO
