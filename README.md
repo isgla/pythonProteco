@@ -17,7 +17,8 @@ Para interpretar los archivos:
 
 BÁSICO:
     
-    **• Orientación a objetos:**
+**• Orientación a objetos:**
+
     Todos son objetos en python.
     Type de función foo() => 
         Clase 4 (poo.py)
@@ -376,7 +377,7 @@ INTERMEDIO:
             
             
             
-            Pasos para api google
+**Pasos para api google**
             
             1. console.cloud.google.com
             
@@ -410,12 +411,13 @@ INTERMEDIO:
                                     https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
                                         Insertar el token ya generaste
         
-        **Twitter**
+**Twitter**
+        
         Apps
             Crear nueva app
             
         
-        **Pygame**
+**Pygame**
         
         SDL (Simple DirectMedia Layer)
         Bibliotecas para creación de juegos
@@ -436,7 +438,7 @@ INTERMEDIO:
         python3 -m pygame.examples.aliens
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    ######REPASO CURSO BÁSICO
+######REPASO CURSO BÁSICO
                 
             return termina una función
             break termina un ciclo
