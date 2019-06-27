@@ -5,7 +5,7 @@ Para interpretar los archivos:
     
     which python3: Te regresa el path de donde este python
     Cambiar entorno virtual: source bin/activate
-    Cambiar el entorno sirve para tener los paquetes fácilmente
+    Cambiar el entorno sirve para tener los paquetes fácilmente.
     
     python3 -m venv proyecto
     which python3
@@ -17,7 +17,7 @@ Para interpretar los archivos:
 
 BÁSICO:
     
-    • Orientación a objetos:
+    **• Orientación a objetos:**
     Todos son objetos en python.
     Type de función foo() => 
         Clase 4 (poo.py)
@@ -410,12 +410,34 @@ INTERMEDIO:
                                     https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
                                         Insertar el token ya generaste
         
-        Twitter
+        **Twitter**
         Apps
             Crear nueva app
+            
+        
+        **Pygame**
+        
+        SDL (Simple DirectMedia Layer)
+        Bibliotecas para creación de juegos
+        
+        Display: Es lo que ves en la pantalla.
+        
+        Surfacee
+        
+        Sprite: Clase base para representar objetos
+        
+        Grupos: Contedores de sprites
+        
+        Rect: Representación de bajo nivel de objetos como los sprites. Define y controla áreas. (Hit box)
+        
+        Mixer: La manera de implementar el sonido del juegos
+        
+        pip3 install pygame --user (biblioteca pygame)
+        python3 -m pygame.examples.aliens
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        REPASO CURSO BÁSICO
+    ######REPASO CURSO BÁSICO
+                
             return termina una función
             break termina un ciclo
             
@@ -428,7 +450,7 @@ INTERMEDIO:
             en el parámetro y las funciones no.
         
         
-        REPASO CURSO INTERMEDIO
+        ######REPASO CURSO INTERMEDIO
             En finally se encuentra el código que debe ejecutarse siempre, pase lo que pase.
             
             TypeError es cuando tratas de sumar una cadena 
