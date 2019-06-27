@@ -2,8 +2,6 @@
 
 Para interpretar los archivos:
     python3 "nombreArchivo.py"
-
-BÁSICO:
     
     which python3: Te regresa el path de donde este python
     Cambiar entorno virtual: source bin/activate
@@ -14,8 +12,10 @@ BÁSICO:
     cd proyecto/
     source bin/activate
     which python3
-        pip3 install tweepy
+    pip3 install tweepy
     deactivate (Para regresar)
+
+BÁSICO:
     
     • Orientación a objetos:
     Todos son objetos en python.
