@@ -20,7 +20,9 @@ def menu_princ():
             continue
 
         elif opc == 2:
-            print("ok 2")
+            import cliente as cl
+            cl.m_cliente()
+            continue
 
         elif opc == 3:
             flag = False

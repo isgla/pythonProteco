@@ -1,4 +1,10 @@
 
+#Vuelos
+efectivo = 0
+tarjeta = 0
+num_efectivo = 0
+num_tarjeta = 0
+
 class Vuelo:
     def __init__(self, dest, sal, lleg, tur, neg, prim, l_tur, l_neg, l_prim, f_sal):
         self.dest = dest
@@ -27,6 +33,36 @@ class Vuelo:
         """.format(self.dest, self.sal, self.lleg, self.tur, self.neg, self.prim, self.l_tur, self.l_neg, self.l_prim, self.f_sal)
         return s
 
+    def get_destino(self):
+        return self.dest
+
+    def get_sal(self):
+        return self.sal
+
+    def get_lleg(self):
+        return self.lleg
+    
+    def get_tur(self):
+        return self.tur
+    
+    def get_neg(self):
+        return self.neg
+    
+    def get_prim(self):
+        return self.prim
+
+    def get_l_tur(self):
+        return self.l_tur
+    
+    def get_l_neg(self):
+        return self.l_neg
+
+    def get_l_prim(self):
+        return self.l_prim
+
+    def get_f_sal(self):
+        return self.f_sal
+    
     def set_destino(self, dest):
         self.dest = dest
 
@@ -59,73 +95,109 @@ class Vuelo:
 
 
     def modifica_vuelo(self):
-	    flag = True
-	    while flag:
-	        mod_vuelo = """
-	            -----Modificar vuelo-----
-	            1. Destino
-	            2. Hora Salida
-	            3. Hora Llegada
-	            4. Costo clase Turista
-	            5. Costo clase Negocios
-	            6. Costo Primera Clase
-	            7. Lugares clase Turista
-	            8. Lugares clase Negocios
-	            9. Lugares Primera Clase
-	            10. Fecha salida
-	            11. Regresar
-	            """
-	        print(mod_vuelo)
-	        opcm = int(input("Ingrese la opción: "))
-	        if opcm == 1:
-	            x = input("Ingrese el nuevo destino del vuelo: ")
-	            #Es método propio de la clase, como si fuera statico en java
-	            self.set_destino(x)
-	            continue
-	        elif opcm == 2:
-	            x = input("Ingrese la nueva hora de salida del vuelo: ")
-	            self.set_sal(x)
-	            continue
-	        elif opcm == 3:
-	            x = input("Ingrese la nueva hora de llegada del vuelo: ")
-	            self.set_lleg(x)
-	            continue
-	        elif opcm == 4:
-	            x = int(input("Ingrese el nuevo costo clase Turista: "))
-	            self.set_tur(x)
-	            continue
-	        elif opcm == 5:
-	            x = int(input("Ingrese el nuevo costo clase Negocios: "))
-	            self.set_neg(x)
-	            continue
-	        elif opcm == 6:
-	            x = int(input("Ingrese el nuevo costo de primera clase:  "))
-	            self.set_prim(x)
-	            continue
-	        elif opcm == 7:
-	            x = int(input("Ingrese el nuevo número de lugares en la clase turista: "))
-	            self.set_l_tur(x)
-	            continue
-	        elif opcm == 8:
-	            x = int(input("Ingrese el nuevo número de lugares en la clase de negocios: "))
-	            self.set_l_neg(x)
-	            continue
-	        elif opcm == 9:
-	            x = int(input("Ingrese el nuevo número de lugares en primera clase: "))
-	            self.set_l_prim(x)
-	            continue
-	        elif opcm == 10:
-	            x = input("Ingrese la nueva fecha de salida: ")
-	            self.set_f_sal(x)
-	            continue
-	        elif opcm == 11:
-	            regresar_admin()
-	            break
+        flag = True
+        while flag:
+            mod_vuelo = """
+                -----Modificar vuelo-----
+                1. Destino
+                2. Hora Salida
+                3. Hora Llegada
+                4. Costo clase Turista
+                5. Costo clase Negocios
+                6. Costo Primera Clase
+                7. Lugares clase Turista
+                8. Lugares clase Negocios
+                9. Lugares Primera Clase
+                10. Fecha salida
+                11. Regresar
+                """
+            print(mod_vuelo)
+            opcm = int(input("Ingrese la opción: "))
+            if opcm == 1:
+                print("Destino: " + self.get_destino())
+                x = input("Nuevo destino: ")
+                #Es método propio de la clase, como si fuera statico en java
+                self.set_destino(x)
+                continue
+            elif opcm == 2:
+                print("Hora de salida del vuelo: " + self.get_sal())
+                x = input("Ingrese la nueva hora de salida del vuelo: ")
+                self.set_sal(x)
+                continue
+            elif opcm == 3:
+                print("Hora de llegada del vuelo: " + self.get_lleg())
+                x = input("Ingrese la nueva hora de llegada del vuelo: ")
+                self.set_lleg(x)
+                continue
+            elif opcm == 4:
+                print("Costo clase Turista: " + self.get_tur())
+                x = int(input("Ingrese el nuevo costo clase Turista: "))
+                self.set_tur(x)
+                continue
+            elif opcm == 5:
+                print("Costo clase Negocios: " + self.get_neg())
+                x = int(input("Ingrese el nuevo costo clase Negocios: "))
+                self.set_neg(x)
+                continue
+            elif opcm == 6:
+                print("Costo de primera clase: " + self.get_prim())
+                x = int(input("Ingrese el nuevo costo de primera clase:  "))
+                self.set_prim(x)
+                continue
+            elif opcm == 7:
+                print("Número de lugares en la clase turista: " + self.get_l_tur())
+                x = int(input("Ingrese el nuevo número de lugares en la clase turista: "))
+                self.set_l_tur(x)
+                continue
+            elif opcm == 8:
+                print("Número de lugares en la clase de negocios: " + self.get_l_neg())
+                x = int(input("Ingrese el nuevo número de lugares en la clase de negocios: "))
+                self.set_l_neg(x)
+                continue
+            elif opcm == 9:
+                print("Número de lugares en primera claseo: " + self.get_l_prim())
+                x = int(input("Ingrese el nuevo número de lugares en primera clase: "))
+                self.set_l_prim(x)
+                continue
+            elif opcm == 10:
+                print("Fecha de salida: " + self.get_f_sal())
+                x = input("Ingrese la nueva fecha de salida: ")
+                self.set_f_sal(x)
+                continue
+            elif opcm == 11:
+                regresar_admin()
+                flag = False
+
+    def m_compra(self):
+        flag = True
+        while flag:
+            print("-----COMPRAR BOLETOS DE VUELO-----")
+            boletos = int(input("Ingrese el número de boletos: "))
+            s = """
+            Número de boletos: {0}
+            Clase:
+            \t1. Turista
+            \t2. Negocios
+            \t3. Primera Clase
+            """.format(str(boletos))
+            clase = int(input("Ingrese la opción de la clase que desea comprar: "))
+
+            s2 = """
+            Forma de pago:
+            \t1. Tarjeta de credito
+            \t2. Efectivo
+            """
+            print(s2)
+            pag = int(input("Ingrese la opción de forma de pago: "))
+
+            print("Tu compra ha sido registrada")
+        
+                
 
 
 def regresar_admin():
-	import administrador as ad
-	ad.admin_func()
+    import administrador as ad
+    ad.admin_func()
 
 
 

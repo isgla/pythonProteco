@@ -3,14 +3,40 @@ import getpass
 import vuelo
 from vuelo import *
 
-adm = "ro"
-contra = "1"
+class Administrador:
+    def __init__(self, nombre, apellido, sueldo, usuario, contrasena):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.sueldo = sueldo
+        self.usuario = usuario
+        self.contrasena = contrasena
+        
+    def __str__(self):
+        admin = """
+        Nombre: {0}
+        Apellido: {1}
+        Usuario: {2}
+        Sueldo: {3}
+        """.format(self.nombre, self.apellido, self.usuario, self.sueldo)
+        return admin
 
+    def get_user(self):
+        return self.usuario
 
+    def get_pass(self):
+        return self.contrasena
+
+administrador = Administrador("Hannah", "Gonzalez", 50000, "han", "12")
+
+adm = administrador.get_user()
+contra = administrador.get_pass()
+
+vuelos = []
 
 def admin_func():
     flag = True
     while flag:
+        
         ventas = """
         ------------SISTEMA DE VENTAS------------
                 1. Ingresar no. máximo de vuelos
@@ -30,7 +56,7 @@ def admin_func():
             continue
 
         elif opc == 2:
-            vuelos = []
+            
             num_vuelos = int(input("¿Cuántos vuelos desea agregar?: "))
             if num_vuelos<= max_vuelos:
                 for i in range(num_vuelos):
@@ -53,13 +79,26 @@ def admin_func():
 
         elif opc == 3:
             i = 1
-            for vuelo in vuelos:
-                print("Vuelo no.: " + str(i))
-                print(str(vuelo))
-                i += 1
+            #Checar lista vacia
+            if not vuelos:
+                print("No hay vuelos")
+            else:
+                for vuelo in vuelos:
+                    print("Vuelo no.: " + str(i))
+                    print(str(vuelo))
+                    i += 1
 
         elif opc == 4:
-            
+            print("Los vuelos son: ")
+            i = 1
+            for vuelo in vuelos:
+                print("-"*15)
+                print(str(i) + " " + str(vuelo.dest))
+                i += 1
+
+            num_vuelo = int(input("Número de vuelo a eliminar: "))
+            del vuelos[num_vuelo - 1]
+            """
             for vuelo in vuelos:
                 print("-"*15)
                 print(vuelo.dest)
@@ -72,28 +111,28 @@ def admin_func():
                 else:
                     print("No se encontró ningún vuelo con ese destino.")
                     continue
+            """
 
         elif opc == 5:
+            print("Los vuelos son: ")
+            i = 1
             for vuelo in vuelos:
                 print("-"*15)
-                print(vuelo.dest)
+                print(str(i) + " " + str(vuelo.dest))
+                i += 1
 
-            m = input("¿Cuál es el destino del vuelo que quiere modificar?: ")
-
-            for v in vuelos:
-                if m == vuelo.dest:
-                    v.modifica_vuelo()
-                    continue
-                else:
-                    print("No se encontró ningún vuelo con ese destino.")
-                    continue
+            num_vuelo = int(input("Número de vuelo a modificar: "))
+            v = vuelos[num_vuelo - 1]
+            v.modifica_vuelo()
+            continue
 
         elif opc == 6:
             pass
         elif opc == 7:
             pass
         elif opc == 8:
-            pass
+            print(str(administrador))
+            continue
         elif opc == 9:
             m_admin()
         
