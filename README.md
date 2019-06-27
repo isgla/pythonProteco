@@ -5,6 +5,18 @@ Para interpretar los archivos:
 
 BÁSICO:
     
+    which python3: Te regresa el path de donde este python
+    Cambiar entorno virtual: source bin/activate
+    Cambiar el entorno sirve para tener los paquetes fácilmente
+    
+    python3 -m venv proyecto
+    which python3
+    cd proyecto/
+    source bin/activate
+    which python3
+        pip3 install tweepy
+    deactivate (Para regresar)
+    
     • Orientación a objetos:
     Todos son objetos en python.
     Type de función foo() => 
@@ -398,6 +410,9 @@ INTERMEDIO:
                                     https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
                                         Insertar el token ya generaste
         
+        Twitter
+        Apps
+            Crear nueva app
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         REPASO CURSO BÁSICO
