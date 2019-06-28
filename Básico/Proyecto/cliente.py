@@ -2,8 +2,6 @@
 import getpass
 import vuelo
 from vuelo import *
-import pago
-from pago import *
 
 class Cliente():
     
@@ -68,7 +66,8 @@ class Cliente():
                         i += 1
                 
                 num_compra_vuelo = int(input("Ingrese el número del vuelo: "))
-                compra_v = vuelos[num_compra_vuelo - 1]
+                import administrador as ad
+                compra_v = ad.vuelos[num_compra_vuelo - 1]
                 compra_v.m_compra()
 
             elif opc == 3:
@@ -108,7 +107,6 @@ def m_cliente():
             for c in clientes:
                 if (clie == c.get_usuario_cliente()) and (password == c.get_contra_cliente()):
                     c.cliente_func()
-                    continue
                     
                 else:
                     print("Contraseña o usuario incorrecto")

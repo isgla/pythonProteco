@@ -4,8 +4,12 @@ efectivo = 0
 tarjeta = 0
 num_efectivo = 0
 num_tarjeta = 0
+num_tur = 0
+num_neg = 0
+num_prim = 0
 
 class Vuelo:
+
     def __init__(self, dest, sal, lleg, tur, neg, prim, l_tur, l_neg, l_prim, f_sal):
         self.dest = dest
         self.sal = sal
@@ -130,32 +134,32 @@ class Vuelo:
                 self.set_lleg(x)
                 continue
             elif opcm == 4:
-                print("Costo clase Turista: " + self.get_tur())
+                print("Costo clase Turista: " + str(self.get_tur()))
                 x = int(input("Ingrese el nuevo costo clase Turista: "))
                 self.set_tur(x)
                 continue
             elif opcm == 5:
-                print("Costo clase Negocios: " + self.get_neg())
+                print("Costo clase Negocios: " + str(self.get_neg()))
                 x = int(input("Ingrese el nuevo costo clase Negocios: "))
                 self.set_neg(x)
                 continue
             elif opcm == 6:
-                print("Costo de primera clase: " + self.get_prim())
+                print("Costo de primera clase: " + str(self.get_prim()))
                 x = int(input("Ingrese el nuevo costo de primera clase:  "))
                 self.set_prim(x)
                 continue
             elif opcm == 7:
-                print("Número de lugares en la clase turista: " + self.get_l_tur())
+                print("Número de lugares en la clase turista: " + str(self.get_l_tur()))
                 x = int(input("Ingrese el nuevo número de lugares en la clase turista: "))
                 self.set_l_tur(x)
                 continue
             elif opcm == 8:
-                print("Número de lugares en la clase de negocios: " + self.get_l_neg())
+                print("Número de lugares en la clase de negocios: " + str(self.get_l_neg()))
                 x = int(input("Ingrese el nuevo número de lugares en la clase de negocios: "))
                 self.set_l_neg(x)
                 continue
             elif opcm == 9:
-                print("Número de lugares en primera claseo: " + self.get_l_prim())
+                print("Número de lugares en primera claseo: " + str(self.get_l_prim()))
                 x = int(input("Ingrese el nuevo número de lugares en primera clase: "))
                 self.set_l_prim(x)
                 continue
@@ -169,6 +173,14 @@ class Vuelo:
                 flag = False
 
     def m_compra(self):
+        global num_tur
+        global num_neg
+        global num_prim
+        global tarjeta
+        global num_tarjeta
+        global efectivo
+        global num_efectivo
+
         flag = True
         while flag:
             print("-----COMPRAR BOLETOS DE VUELO-----")
@@ -180,7 +192,17 @@ class Vuelo:
             \t2. Negocios
             \t3. Primera Clase
             """.format(str(boletos))
+            print(s)
             clase = int(input("Ingrese la opción de la clase que desea comprar: "))
+            if clase == 1:
+                num_tur += boletos
+            elif clase == 2:
+                num_neg += boletos
+            elif clase == 3:
+                num_prim += boletos
+            else:
+                print("Ingresa una opción válida")
+                continue
 
             s2 = """
             Forma de pago:
@@ -189,8 +211,53 @@ class Vuelo:
             """
             print(s2)
             pag = int(input("Ingrese la opción de forma de pago: "))
+            #Tarjeta de credito
+            
+            if pag == 1:
+                #Costo clase Turista
+                #global tarjeta
+                #global num_tarjeta
+                if clase == 1:
+                    tarjeta = ((tarjeta + self.get_tur()) * boletos)
+                    num_tarjeta += 1
+                #Costo clase Negocios
+                elif clase == 2:
+                    tarjeta = ((tarjeta + self.get_neg())*boletos)
+                    num_tarjeta += 1
+                #Costo clase Primera clase
+                elif clase == 3:
+                    tarjeta = ((tarjeta + self.get_prim())*boletos)
+                    num_tarjeta += 1
+                else:
+                    print("Ingresa una opción válida")
+                    continue
+            
+            #Efectivo
+            elif pag == 2:
+                #Costo clase Turista
+                #global efectivo
+                #global num_efectivo
+                if clase == 1:
+                    efectivo = ((efectivo + self.get_tur()) * boletos)
+                    num_efectivo += boletos
+                #Costo clase Negocios
+                elif clase == 2:
+                    efectivo = ((efectivo + self.get_neg()) * boletos)
+                    num_efectivo += boletos
+                #Costo clase Primera clase
+                elif clase == 3:
+                    efectivo = ((efectivo + self.get_prim()) * boletos)
+                    num_efectivo += boletos
+                else:
+                    print("Ingresa una opción válida")
+                    continue
+            
+            else:
+                print("Ingrese una opción válida")
+                continue
 
             print("Tu compra ha sido registrada")
+            flag = False
         
                 
 

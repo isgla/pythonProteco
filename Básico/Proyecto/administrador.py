@@ -2,6 +2,8 @@
 import getpass
 import vuelo
 from vuelo import *
+import estadisticas
+from estadisticas import *
 
 class Administrador:
     def __init__(self, nombre, apellido, sueldo, usuario, contrasena):
@@ -98,20 +100,6 @@ def admin_func():
 
             num_vuelo = int(input("Número de vuelo a eliminar: "))
             del vuelos[num_vuelo - 1]
-            """
-            for vuelo in vuelos:
-                print("-"*15)
-                print(vuelo.dest)
-            
-            elim = input("\n¿Cuál es el destino del vuelo que quiere eliminar?: ")
-
-            for vuelo in vuelos:
-                if elim == vuelo.dest:
-                    vuelos.remove(vuelo)
-                else:
-                    print("No se encontró ningún vuelo con ese destino.")
-                    continue
-            """
 
         elif opc == 5:
             print("Los vuelos son: ")
@@ -127,9 +115,9 @@ def admin_func():
             continue
 
         elif opc == 6:
-            pass
+            est_pago()
         elif opc == 7:
-            pass
+            est_clase()
         elif opc == 8:
             print(str(administrador))
             continue

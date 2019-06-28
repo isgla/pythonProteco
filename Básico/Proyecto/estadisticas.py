@@ -1,6 +1,6 @@
 #Estadísticas de pago
-import cliente
-from cliente import *
+import vuelo
+from vuelo import *
 
 def est_pago():
     flag = True
@@ -17,15 +17,16 @@ def est_pago():
         print(pago)
         opc = int(input("Ingrese una opción: "))
         if opc == 1:
-
+            print(str(efectivo))
         elif opc == 2:
-
+            print(str(tarjeta))
         elif opc == 3:
-
+            total = efectivo + tarjeta
+            print(str(total))
         elif opc == 4:
-
+            print(str(num_efectivo))
         elif opc == 5:
-
+            print(str(num_tarjeta))
         elif opc == 6:
             import administrador as ad
             ad.admin_func()
@@ -45,3 +46,16 @@ def est_clase():
         5. Regresar
         """
         print(clase)
+        opc = int(input("Ingrese una opción: "))
+        if opc == 1:
+            print(str(num_tur))
+        elif opc == 2:
+            print(str(num_neg))
+        elif opc == 3:
+            print(str(num_prim))
+        elif opc == 4:
+            print(str(max(num_tur, num_neg, num_prim)))
+        elif opc == 5:
+            import administrador as ad
+            ad.admin_func()
+            flag = False
