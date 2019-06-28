@@ -196,6 +196,7 @@ class Vuelo:
             clase = int(input("Ingrese la opción de la clase que desea comprar: "))
             if clase == 1:
                 num_tur += boletos
+                #print(str(num_tur))
             elif clase == 2:
                 num_neg += boletos
             elif clase == 3:
@@ -220,6 +221,7 @@ class Vuelo:
                 if clase == 1:
                     tarjeta = ((tarjeta + self.get_tur()) * boletos)
                     num_tarjeta += 1
+                    #print(str(num_tarjeta))
                 #Costo clase Negocios
                 elif clase == 2:
                     tarjeta = ((tarjeta + self.get_neg())*boletos)

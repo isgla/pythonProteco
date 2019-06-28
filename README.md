@@ -436,6 +436,28 @@ INTERMEDIO:
         
         pip3 install pygame --user (biblioteca pygame)
         python3 -m pygame.examples.aliens
+        
+**Watson**
+
+    IBM cloud
+    Watson
+        Visual Recognition
+            Referencia de API
+                More
+                    Python
+                    
+                    pip3 install watson_developer_cloud --user (en mi computadora puedo no poner --user)
+                    
+                    pip3 install --upgrade "ibm-watson>=3.0.4" --user
+                    
+    Watson Visual Recognition Basic
+    Crear aplicación:
+        Watson Visual Recognition Basic WLAYD
+        
+        Iniciar Watson studio
+        
+    Watson Assistant
+        Crear
        
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ######REPASO CURSO BÁSICO

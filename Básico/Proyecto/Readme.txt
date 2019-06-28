@@ -1,6 +1,6 @@
 La cuenta de administrador es:
-ro
-1
+han
+12
 
 Ejecutar python3 "proyecto3"
 

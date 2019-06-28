@@ -3,6 +3,10 @@ import vuelo
 from vuelo import *
 
 def est_pago():
+    global efectivo
+    global tarjeta
+    global num_efectivo
+    global num_tarjeta
     flag = True
     while flag:
         pago = """
@@ -35,6 +39,9 @@ def est_pago():
 
 
 def est_clase():
+    global num_tur
+    global num_neg
+    global num_prim
     flag = True
     while flag:
         clase = """
